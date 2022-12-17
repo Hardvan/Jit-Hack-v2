@@ -228,3 +228,11 @@
   height: 150px;
   margin-bottom: 0px;
 }
+
+#icons img {
+  transition: transform 0.2s; /* Animation */
+}
+
+#icons img:hover {
+  transform: scale(1.2);
+}
