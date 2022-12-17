@@ -47,6 +47,10 @@
   margin-right: 0.5rem;
 }
 
+.NavLink:hover {
+  transform: scale(1.1);
+}
+
 /* Heart Animation */
 .enclose {
   /* margin: 50px;
