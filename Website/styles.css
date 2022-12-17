@@ -47,6 +47,61 @@
   margin-right: 0.5rem;
 }
 
+/* Heart Animation */
+.enclose {
+  /* margin: 50px;
+  padding: 50px; */
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  /* min-height: 92vh; */
+  background: white;
+}
+
+.heart {
+  height: 100px;
+  width: 100px;
+  background: red;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px red;
+  animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  80% {
+    transform: rotate(-45deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+.heart::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: red;
+  top: -55%;
+  border-radius: 50px;
+  box-shadow: -5px 5px 45px red;
+}
+
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: red;
+  right: -55%;
+  border-radius: 50px;
+  box-shadow: -5px 5px 45px red;
+}
+
 /*? Welcome */
 .Welcome {
   margin-top: 2rem;
@@ -58,6 +113,12 @@
 .WelcomeTitle {
   font-family: "Playfair Display", serif;
   font-style: italic;
+}
+
+.WelcomeImage {
+  float: right;
+  width: 150px;
+  margin-bottom: 2rem;
 }
 
 /*? Description */
