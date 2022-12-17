@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In a Heart Beat</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2883/2883911.png"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="root">
+      <!--* NAVBAR -->
+      <nav class="navbar navbar-expand-lg text-light bg-dark sticky-top">
+        <div class="container-fluid CustomNavbar">
+          <a class="navbar-brand text-light NavBrand" href="#home">
+            In a Heart Beat
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-light" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light text-light NavText NavLink"
+                  aria-current="page"
+                  href="#home"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light NavText NavLink" href="#features">
+                  Features
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light NavText NavLink" href="#about">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--* Carousel -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/img1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/img2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/img3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--* Welcome -->
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark Welcome">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic WelcomeTitle">Welcome!</h1>
+        <!-- <img src={require("./images/WELCOME_HEART.jpg")} alt="Welcome Heart" -->
+        <!-- /> -->
+        <p class="lead my-3">
+          In a Heartbeat is a website that aims to predict whether a person is
+          at risk of getting a heart attack or not with the power of machine
+          learning.
+        </p>
+      </div>
+    </div>
+
+    <!--* Description -->
+    <div class="card-group">
+      <div class="card">
+        <img
+          class="card-img-top CardImage"
+          src="./images/HeartStethoscope.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title CardTitle">Brief Intro</h5>
+          <p class="card-text CardText">
+            During recent years, the rate of heart attacks has been on the rise.
+            In India alone, there were arround 28,449 deaths due to heart
+            attacks. The edge that we have over other products is that we have
+            the luxury of a pre-trained model which can predict the heart attack
+            to a great extent.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top CardImage"
+          src="https://c4.wallpaperflare.com/wallpaper/391/960/943/love-wallpaper-preview.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title CardTitle">Easy to Use</h5>
+          <p class="card-text CardText">
+            Most people are apprehensive to visit a gloom environment like that
+            of a hospital, so our product aims to eliminate the unease and
+            instill comfort.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top CardImage"
+          src="https://wallpaperaccess.com/full/3810369.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title CardTitle">Real Time</h5>
+          <p class="card-text CardText">
+            Our interactive website allows the user to enter his medical details
+            such as oxygen %, heart rate, etc. and submit it. Our pre-trained
+            machine learning model will accurately predict whether the person
+            will get heart attack or not. Based on the result appropriate course
+            of action will be provided to the users.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
