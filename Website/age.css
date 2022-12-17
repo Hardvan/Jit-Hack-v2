@@ -1,0 +1,76 @@
+.AgeGroup {
+  background-color: white;
+  height: 100vh;
+  /*  margin: 20px;
+    text-align: center;
+    line-height: 1.5rem; */
+  display: grid;
+  place-items: center center;
+}
+
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.Card {
+  background: linear-gradient(black, grey);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0, 18);
+}
+
+.Container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.AgeImg {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.Card > .Container:after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0;
+}
+
+.Card:hover {
+  transform: scale(1.1);
+}
+
+.Card1 > .Container:after {
+  background-image: linear-gradient(135deg, orange, purple);
+}
+
+.Details {
+  padding: 20px 10px;
+}
+
+.Details > h3 {
+  color: white;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin: 10px 0 15px 0;
+  font-weight: bolder;
+  padding-left: 1.5rem;
+}
+
+.Details > p {
+  color: bisque;
+  font-size: 15px;
+  padding-left: 1rem;
+
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 20px;
+}
